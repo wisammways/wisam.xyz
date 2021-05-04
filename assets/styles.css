@@ -1435,3 +1435,16 @@ ol {
 		padding-top: 250px;
 	}
 }
+a.set-bg.port-pic {
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    transition: 2s ease-out;
+}
+a.set-bg.port-pic:hover {
+    background-position: center bottom;
+    
+}
+.portfolio-item a:after {
+    display: none;
+}
