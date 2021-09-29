@@ -3,482 +3,458 @@
 <html lang="en">
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Wisam Mways (Wisamx)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Wisam Mways (Wisamx)</title>
 
-<meta name="description" content="I’m a web developer in love with photography, planting and discovering new worlds and cultures.">
-<meta name="keywords" content="wisam, mways, developer, web, job, Freelance">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="canonical" href="https://wisam.xyz/">
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Eng. Wisam Mways">
-<meta property="og:description" content="I’m a web developer in love with photography, planting and discovering new worlds and cultures.">
-<meta property="og:url" content="https://wisam.xyz/">
-<meta property="og:site_name" content="Wisam Mways">
-<meta property="og:image" content="https://wisam.xyz/images/wisam-mways-photo.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:label" content="Wisam Mways">
-<meta name="twitter:image" content="https://wisam.xyz/images/wisam-mways-photo.jpg">
+	<meta name="description"
+		content="I’m a web developer in love with photography, planting and discovering new worlds and cultures.">
+	<meta name="keywords" content="wisam, mways, developer, web, job, Freelance">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="canonical" href="https://wisam.xyz/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Eng. Wisam Mways">
+	<meta property="og:description"
+		content="I’m a web developer in love with photography, planting and discovering new worlds and cultures.">
+	<meta property="og:url" content="https://wisam.xyz/">
+	<meta property="og:site_name" content="Wisam Mways">
+	<meta property="og:image" content="https://wisam.xyz/images/wisam-mways-photo.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label" content="Wisam Mways">
+	<meta name="twitter:image" content="https://wisam.xyz/images/wisam-mways-photo.jpg">
 
-<meta name="google-site-verification" content="bT8UWnKzDQvHxH64QFXZu1levIzncLjkqEiPoygXbP4" />
+	<meta name="google-site-verification" content="bT8UWnKzDQvHxH64QFXZu1levIzncLjkqEiPoygXbP4" />
 
-<meta http-equiv="x-dns-prefetch-control" content="on">
+	<meta http-equiv="x-dns-prefetch-control" content="on">
 
-<link href="" rel="shortcut icon">
+	<link href="" rel="shortcut icon">
 
-<link rel="preconnect" href="https://fonts.googleapis.com/">
-<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
-<link rel="preconnect" href="https://cdnjs.cloudflare.com/">
-<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com/">
+	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-<link rel="stylesheet" href="./assets/styles.min.css">
+	<link rel="stylesheet" href="./assets/styles.min.css">
 
-<style>
-
-
-ul.cloud {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  line-height: 2.75rem;
-  width: 500px;
-}
-
-ul.cloud a {
-  /*   
-  Not supported by any browser at the moment :(
-  --size: attr(data-weight number); 
-  */
-  --size: 4;
-  --color: #a33;
-  color: var(--color);
-  font-size: calc(var(--size) * 0.25rem + 0.5rem);
-  display: block;
-  padding: 0.125rem 0.25rem;
-  position: relative;
-  text-decoration: none;
-  /* 
-  For different tones of a single color
-  opacity: calc((15 - (9 - var(--size))) / 15); 
-  */
-}
-
-ul.cloud a[data-weight="1"] { --size: 1; }
-ul.cloud a[data-weight="2"] { --size: 2; }
-ul.cloud a[data-weight="3"] { --size: 3; }
-ul.cloud a[data-weight="4"] { --size: 4; }
-ul.cloud a[data-weight="5"] { --size: 6; }
-ul.cloud a[data-weight="6"] { --size: 8; }
-ul.cloud a[data-weight="7"] { --size: 10; }
-ul.cloud a[data-weight="8"] { --size: 13; }
-ul.cloud a[data-weight="9"] { --size: 16; }
-
-ul[data-show-value] a::after {
-  content: " (" attr(data-weight) ")";
-  font-size: 1rem;
-}
-
-ul.cloud li:nth-child(2n+1) a { --color: #181; }
-ul.cloud li:nth-child(3n+1) a { --color: #33a; }
-ul.cloud li:nth-child(4n+1) a { --color: #c38; }
-
-ul.cloud a:focus {
-  outline: 1px dashed;
-}
-
-ul.cloud a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 0;
-  height: 100%;
-  background: var(--color);
-  transform: translate(-50%, 0);
-  opacity: 0.15;
-  transition: width 0.25s;
-}
-
-ul.cloud a:focus::before,
-ul.cloud a:hover::before {
-  width: 100%;
-}
-
-@media (prefers-reduced-motion) {
-  ul.cloud * {
-    transition: none !important;
-  }
-}
-	</style>
-
-<!--[if lt IE 9]>
+	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+	<![endif]-->
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-20WG38JL6L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-20WG38JL6L"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-  gtag('config', 'G-20WG38JL6L');
-</script>
+		gtag('config', 'G-20WG38JL6L');
+	</script>
 
 </head>
 
 <body>
 
 
-<section class="hero-section spad">
-<div class="container-fluid">
-<div class="row">
-<div class="col-xl-10 offset-xl-1">
-<div class="row">
-<div class="col-lg-6">
-<div class="hero-text">
-<h2>Wisam Mways</h2>
-<p>I’m a web developer in love with photography, planting and discovering new worlds and cultures.</p>
-</div>
-<div class="hero-info">
-<h2>General Info</h2>
-<ul>
-<li><span>Date of Birth</span>Mar 21, 1988</li>
-<li><span>Address</span>Beirut, Lebanon</li>
-<li><span>E-mail</span><a href="mailto:wisamx@outlook.com">wisamx@outlook.com</a></li>
-<li><span>Phone </span><a href="tel:+96170712315">+961 70 712 315</a></li>
-</ul>
-</div>
-</div>
-<div class="col-lg-6">
-<figure class="hero-image">
-<img src="./images/wisam-mways-photo.jpg" alt="Wisam Mways Photo">
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+	<section class="hero-section spad">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="hero-text">
+								<h2>Wisam Mways</h2>
+								<p>I’m a web developer in love with photography, planting and discovering new worlds and
+									cultures.</p>
+							</div>
+							<div class="hero-info">
+								<h2>General Info</h2>
+								<ul>
+									<li><span>Date of Birth</span>Mar 21, 1988</li>
+									<li><span>Address</span>Beirut, Lebanon</li>
+									<li><span>E-mail</span><a href="mailto:wisamx@outlook.com">wisamx@outlook.com</a>
+									</li>
+									<li><span>Phone </span><a href="tel:+96170712315">+961 70 712 315</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<figure class="hero-image">
+								<img src="./images/wisam-mways-photo.jpg" alt="Wisam Mways Photo">
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
-<section class="portfolio-section spad pb-0">
-<div class="container-fluid">
-<div class="row">
-<div class="col-xl-4 col-md-8 offset-xl-2 ">
-<div class="section-title">
-<h2>Portfolio</h2>
-</div>
-</div>
-<div class="col-md-4 text-md-right">
-<a href="portfolio.html" class="site-btn mb-5">See All Portfolio</a>
- </div>
-</div>
-<div class="portfolio-warp">
-<div class="row">
-<div class="col-xl-3 col-lg-6 col-md-6">
-<div class="portfolio-item">
-<a href="http://faadesigns.com/" target="_blacnk" rel=”nofollow” class="set-bg port-pic" style="background-image: url('./images/portofolio/faadesings.jpg');"></a>
-<h2>FAADesigns</h2>
-<p>in partner with AnotherId</p>
-</div>
-</div>
-<div class="col-xl-3 col-lg-6 col-md-6">
-<div class="portfolio-item">
-<a href="http://theattic.store/" target="_blacnk" rel=”nofollow” class="set-bg port-pic" style="background-image: url('./images/portofolio/theattic.jpg');"></a>
-<h2>The Attic</h2>
-<p>Website Development</p>
-</div>
-</div>
-<div class="col-xl-3 col-lg-6 col-md-6">
-<div class="portfolio-item">
-<a href="https://3dline.no" target="_blacnk" rel=”nofollow” class="set-bg port-pic" style="background-image: url('./images/portofolio/3dline.jpg');"></a>
-<h2>3DLine Norway</h2>
-<p>Website Development</p>
-</div>
-</div>
-<div class="col-xl-3 col-lg-6 col-md-6">
-<div class="portfolio-item">
-<a href="https://avrio.ch" target="_blacnk" rel=”nofollow” class="set-bg port-pic" style="background-image: url('./images/portofolio/avrio.jpg');"></a>
-<h2>Institut Avrio de Geneve</h2>
-<p>Website Development</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+	<section class="portfolio-section spad pb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-4 col-md-8 offset-xl-2 ">
+					<div class="section-title">
+						<h2>Portfolio</h2>
+					</div>
+				</div>
+				<!--div class="col-md-4 text-md-right">
+					<a href="portfolio.html" class="site-btn mb-5">See All Portfolio</a>
+				</div-->
+			</div>
+			<div class="portfolio-warp">
+				<div class="row">
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="portfolio-item">
+							<a href="http://faadesigns.com/" target="_blacnk" rel=”nofollow” class="set-bg port-pic"
+								style="background-image: url('./images/portofolio/faadesings.jpg');"></a>
+							<h2>FAADesigns</h2>
+							<p>in partner with AnotherId</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="portfolio-item">
+							<a href="http://theattic.store/" target="_blacnk" rel=”nofollow” class="set-bg port-pic"
+								style="background-image: url('./images/portofolio/theattic.jpg');"></a>
+							<h2>The Attic</h2>
+							<p>Website Development</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="portfolio-item">
+							<a href="https://3dline.no" target="_blacnk" rel=”nofollow” class="set-bg port-pic"
+								style="background-image: url('./images/portofolio/3dline.jpg');"></a>
+							<h2>3DLine Norway</h2>
+							<p>Website Development</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="portfolio-item">
+							<a href="https://avrio.ch" target="_blacnk" rel=”nofollow” class="set-bg port-pic"
+								style="background-image: url('./images/portofolio/avrio.jpg');"></a>
+							<h2>Institut Avrio de Geneve</h2>
+							<p>Website Development</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- div class="row mt-5 pt-5">
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="portfolio-item">
+							<a href="http://faadesigns.com/" target="_blacnk" rel=”nofollow” class="set-bg port-pic"
+								style="background-image: url('./images/portofolio/faadesings.jpg');"></a>
+							<h2>Vanilla72</h2>
+							<p>in partner with AnotherId</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="portfolio-item">
+							<a href="http://theattic.store/" target="_blacnk" rel=”nofollow” class="set-bg port-pic"
+								style="background-image: url('./images/portofolio/theattic.jpg');"></a>
+							<h2>Katstores</h2>
+							<p>Website Development</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="portfolio-item">
+							<a href="https://3dline.no" target="_blacnk" rel=”nofollow” class="set-bg port-pic"
+								style="background-image: url('./images/portofolio/3dline.jpg');"></a>
+							<h2>Bokitla</h2>
+							<p>Website Development</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="portfolio-item">
+							<a href="https://avrio.ch" target="_blacnk" rel=”nofollow” class="set-bg port-pic"
+								style="background-image: url('./images/portofolio/avrio.jpg');"></a>
+							<h2>Perespectives</h2>
+							<p>Website Development</p>
+						</div>
+					</div>
+				</div -->
+
+			</div>
+		</div>
+	</section>
 
 
-<div class="social-section">
-	<div class="container-fluid">
-	<div class="row">
-	<div class="col-xl-10 offset-xl-1">
-	<div class="social-link-warp">
-	<div class="social-links">
-	<a href="https://www.linkedin.com/in/wisamx/" target="_blank" rel=”nofollow”><i class="fab fa-linkedin"></i></a>
-	<a href="https://www.facebook.com/wisam.mways" target="_blank" rel=”nofollow”><i class="fab fa-facebook"></i></a>
-	<a href="https://github.com/wisammways" target="_blank" rel=”nofollow”><i class="fab fa-github"></i></a>
-	<a href="https://www.instagram.com/wisamo.mways/" target="_blank" rel=”nofollow”><i class="fab fa-instagram"></i></a>
-	<a href="https://api.whatsapp.com/send/?phone=0096170712315&text&app_absent=0" target="_blank" rel=”nofollow”><i class="fab fa-whatsapp"></i></a>
-	</div>
-	<h2 class="hidden-md hidden-sm">My Social Profiles</h2>
-	</div>
-	</div>
-	</div>
-	</div>
+
+
+
+	<div class="social-section mt-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="social-link-warp">
+						<div class="social-links">
+							<a href="https://www.linkedin.com/in/wisamx/" target="_blank" rel=”nofollow”><i
+									class="fab fa-linkedin"></i></a>
+							<a href="https://github.com/wisammways" target="_blank" rel=”nofollow”><i
+									class="fab fa-github"></i></a>
+							<a href="https://www.instagram.com/wisamo.mways/" target="_blank" rel=”nofollow”><i
+									class="fab fa-instagram"></i></a>
+							<a href="https://api.whatsapp.com/send/?phone=0096170712315&text&app_absent=0"
+								target="_blank" rel=”nofollow”><i class="fab fa-whatsapp"></i></a>
+						</div>
+						<h2 class="hidden-md hidden-sm">My Social Profiles</h2>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
+
+
+	<section class="extra-section spad pb-0">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-8 offset-xl-2">
+					<div class="section-title">
+						<h2>Skills</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 pt-5">
+							<div class="fact-box trans">
+								<div class="fact-content">
+									<div class="circle-progress">
+										<div id="progress1" class="prog-circle"><canvas width="218" height="218"
+												style="height: 175px; width: 175px;"></canvas></div>
+										<div class="progress-info">
+											<h2>95%</h2>
+										</div>
+										<div class="prog-title">
+											<h3>WordPress</h3>
+											<p>Theme and Plugin Development</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 pt-5">
+							<div class="fact-box trans">
+								<div class="fact-content">
+									<div class="circle-progress">
+										<div id="progress2" class="prog-circle"><canvas width="218" height="218"
+												style="height: 175px; width: 175px;"></canvas></div>
+										<div class="progress-info">
+											<h2>75%</h2>
+										</div>
+										<div class="prog-title">
+											<h3>Drupal</h3>
+											<p>Custom Theme Development</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 pt-5">
+							<div class="fact-box trans">
+								<div class="fact-content">
+									<div class="circle-progress">
+										<div id="progress2" class="prog-circle"><canvas width="218" height="218"
+												style="height: 175px; width: 175px;"></canvas></div>
+										<div class="progress-info">
+											<h2>45%</h2>
+										</div>
+										<div class="prog-title">
+											<h3>Laravel</h3>
+											<p>Web Applications with Vue.js</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="fact-box">
+								<div class="fact-content">
+									<h2><i class="fa fa-globe-africa"></i></h2>
+									<h2>10</h2>
+									<p>Years of Experience</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 
 	<section class="resume-section spad">
 		<div class="container-fluid">
-		<div class="row">
-		<div class="col-xl-7 offset-xl-2">
-		<div class="section-title">
-		<h2>Skils</h2>
+			<div class="row">
+				<div class="col-xl-7 offset-xl-2">
+					<div class="section-title">
+						<h2>Work Experience</h2>
+					</div>
+					<ul class="resume-list">
+						<li>
+							<h2>2020-Present</h2>
+							<h3>MindField Digital<small style="font-size: 20px;">, LEBANON</small></h3>
+							<h4>Web Developer</h4>
+							<p style="text-align: justify;">Description is being writtin.</p>
+						</li>
+						<li>
+							<h2>2018-2020</h2>
+							<h3>Institut Avrio de Geneve<small style="font-size: 20px;">, SWITZERLAND</small></h3>
+							<h4>Web Developer, IT</h4>
+							<p style="text-align: justify;">Developed institute's international website and the Arabic
+								version of the website using
+								wordpress. Aslo designed Institute's Logos. and remotly managed of Institute's NAS
+								device.
+								and created their online data management and accounting solution.</p>
+						</li>
+						<li>
+							<h2>2013-2018</h2>
+							<h3>AlBa'eth University <small style="font-size: 20px;">, SYRIA</small></h3>
+							<h4>Teaching Assistance</h4>
+							<p style="text-align: justify;">Taught the practical sections of courses like Programming in
+								C++, Algorithms and Data
+								structures, Operating Systems, Computer Networks, Parallel Computing and Robotics.
+								Supervised students work at university's laboratories guiding students with their
+								graduation projects.</p>
+						</li>
+						<li>
+							<h2>2007-2018</h2>
+							<h3>Freelance <small style="font-size: 20px;">, SYRIA</small></h3>
+							<h4>Web Developer</h4>
+							<p style="text-align: justify;">Description is being writtin.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
+	</section>
 
 
-		<ul class="cloud" role="navigation" aria-label="Webdev word cloud">
-			<li><a href="#" data-weight="4">HTTP</a></li>
-			<li><a href="#" data-weight="1">Ember</a></li>
-			<li><a href="#" data-weight="5">Sass</a></li>
-			<li><a href="#" data-weight="8">HTML</a></li>
-			<li><a href="#" data-weight="6">FlexBox</a></li>
-			<li><a href="#" data-weight="4">API</a></li>
-			<li><a href="#" data-weight="5">VueJS</a></li>
-			<li><a href="#" data-weight="6">Grid</a></li>
-			<li><a href="#" data-weight="2">Rest</a></li>
-			<li><a href="#" data-weight="9">JavaScript</a></li>
-			<li><a href="#" data-weight="3">Animation</a></li>
-			<li><a href="#" data-weight="7">React</a></li>
-			<li><a href="#" data-weight="8">CSS</a></li>
-			<li><a href="#" data-weight="1">Cache</a></li>
-			<li><a href="#" data-weight="3">Less</a></li>
-		  </ul>
-
-
+	<section class="resume-section with-bg spad">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-7 offset-xl-2">
+					<div class="section-title">
+						<h2>Education</h2>
+					</div>
+					<ul class="resume-list">
+						<li>
+							<h2>2018</h2>
+							<h3>Master's degree in Computer Engineering</h3>
+							<h4>Tishreen University, SYRIA</h4>
+							<p>Researched about publishing universities and educational data as linked data using
+								Semantic Web technologies</p>
+						</li>
+						<li>
+							<h2>2006 - 2011</h2>
+							<h3>Bachelor's degree in Computer and Automated Control Engineering</h3>
+							<h4>Tishreen University, SYRIA</h4>
+							<p style="text-align: justify;">Studied programming, Database design and normalization,
+								Compilers Systems,
+								Operating Systems, Information System Analysis, Software Engineering, Image Processing,
+								Networking, Computer Architecture, Information Security and Parallel Computing.
+								and as a graduation project I have built a website for the university using ASP.NET Web
+								Forms and SQL
+								Server.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
+	</section>
+
+
+	<section class="resume-section with-bg spad mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-8 offset-xl-2">
+					<div class="section-title">
+						<h2>Don’t be a stranger</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+							<p>Feel free to get in touch with us. We're always open to discuss new projects, creative
+								ideas, or opportunities to be part of your visions.</p>
+						</div>
+
+							<div class="col-md-4">
+								<div class="fact-box trans">
+									<div class="fact-content">
+										<div class="circle-progress">
+											<div id="progress1" class="prog-circle"><canvas width="218" height="218"
+													style="height: 175px; width: 175px;"></canvas></div>
+											<div class="progress-info">
+												<h2><i class="fa fa-phone"></i></h2>
+											</div>
+											<div class="prog-title">
+												<h3>Call Me</h3>
+												<p>00961 707 123 15</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="fact-box trans">
+									<div class="fact-content">
+										<div class="circle-progress">
+											<div id="progress2" class="prog-circle"><canvas width="218" height="218"
+													style="height: 175px; width: 175px;"></canvas></div>
+											<div class="progress-info">
+												<h2><i class="fab fa-whatsapp"></i></h2>
+											</div>
+											<div class="prog-title">
+												<h3>Whatsapp</h3>
+												<p>00961 707 123 15</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="fact-box trans">
+									<div class="fact-content">
+										<div class="circle-progress">
+											<div id="progress2" class="prog-circle"><canvas width="218" height="218"
+													style="height: 175px; width: 175px;"></canvas></div>
+											<div class="progress-info">
+												<h2><i class="fa fa-envelope"></i></h2>
+											</div>
+											<div class="prog-title">
+												<h3>Write Email</h3>
+												<p>wisamx<span>@</span>outlook.com</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						
+					</div>
+				</div>
+			</div>
 		</div>
+	</section>
+
+
+
+	<footer class="footer-section">
+		<div class="container text-center">
+			<div class="copyright">
+				Copyright ©
+				<script>document.write(new Date().getFullYear());</script> All rights reserved
+			</div>
 		</div>
-		</section>
+	</footer>
 
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
-<section class="resume-section spad">
-<div class="container-fluid">
-<div class="row">
-<div class="col-xl-7 offset-xl-2">
-<div class="section-title">
-<h2>Work Experience</h2>
-</div>
-<ul class="resume-list">
-<li>
-<h2>2020-Present</h2>
-<h3>MindField Digital<small style="font-size: 20px;">, LEBANON</small></h3>
-<h4>Web Developer</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
-</li>
-<li>
-<h2>2018-2020</h2>
-<h3>Institut Avrio de Geneve<small style="font-size: 20px;">, SWITZERLAND</small></h3>
-<h4>Web Developer, IT</h4>
-<p>Developed institute's international website and the Arabic version of the website using wordpress. Aslo designed Institute's Logos. and remotly managed of Institute's NAS device.
-	and created their online data management and accounting solution.</p>
-</li>
-<li>
-	<h2>2013-2018</h2>
-	<h3>AlBa'eth University <small style="font-size: 20px;">, SYRIA</small></h3>
-	<h4>Teaching Assistance</h4>
-	<p>Taught the practical sections of courses like Programming in C++, Algorithms and Data structures, Operating Systems, Computer Networks, Parallel Computing and Robotics.
-		Supervised students work at university's laboratories guiding students with their graduation projects.</p>
-	</li>
-<li>
-<h2>2007-2018</h2>
-<h3>Freelance <small style="font-size: 20px;">, SYRIA</small></h3>
-<h4>Web Developer</h4>
-<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
+</body>
 
-
-<section class="resume-section with-bg spad">
-<div class="container-fluid">
-<div class="row">
-<div class="col-xl-7 offset-xl-2">
-<div class="section-title">
-<h2>Education</h2>
-</div>
-<ul class="resume-list">
-<li>
-<h2>2018</h2>
-<h3>Master's degree in Computer Engineering</h3>
-<h4>Tishreen University, SYRIA</h4>
-<p>Researched about publishing universities and educational data as linked data using Semantic Web technologies</p>
-</li>
-<li>
-<h2>2006 - 2011</h2>
-<h3>Bachelor's degree in Computer and Automated Control Engineering</h3>
-<h4>Tishreen University, SYRIA</h4>
-<p>Learned about programming, Database design and normalization, Compilers Systems,
-	Operating Systems, Information System Analysis, Software Engineering, Image Processing,
-	Networking, Computer Architecture, Information Security and Parallel Computing.
-	and as a graduation project I have built a website for the university using ASP.NET Web Forms and SQL
-	Server.
-</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-
-
-<!--section class="review-section spad pb-0">
-<div class="container-fluid">
-<div class="row">
-<div class="col-xl-7 offset-xl-2">
-<div class="section-title">
-<h2>References</h2>
-</div>
-<div class="review-slider owl-carousel owl-loaded owl-drag">
-
-
-
-<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1412px, 0px, 0px); transition: all 0s ease 0s; width: 4942px;"><div class="owl-item cloned" style="width: 706px;"><div class="single-review">
-<div class="qut">“</div>
-<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
-<h3>Robert G. Smith</h3>
-<h4>Manager, Company</h4>
-</div></div><div class="owl-item cloned" style="width: 706px;"><div class="single-review">
-<div class="qut">“</div>
-<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
-<h3>Robert G. Smith</h3>
-<h4>Manager, Company</h4>
-</div></div><div class="owl-item active" style="width: 706px;"><div class="single-review">
-<div class="qut">“</div>
-<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
-<h3>Robert G. Smith</h3>
-<h4>Manager, Company</h4>
-</div></div><div class="owl-item" style="width: 706px;"><div class="single-review">
-<div class="qut">“</div>
-<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
-<h3>Robert G. Smith</h3>
-<h4>Manager, Company</h4>
-</div></div><div class="owl-item" style="width: 706px;"><div class="single-review">
-<div class="qut">“</div>
-<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
-<h3>Robert G. Smith</h3>
-<h4>Manager, Company</h4>
-</div></div><div class="owl-item cloned" style="width: 706px;"><div class="single-review">
-<div class="qut">“</div>
-<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
-<h3>Robert G. Smith</h3>
-<h4>Manager, Company</h4>
-</div></div><div class="owl-item cloned" style="width: 706px;"><div class="single-review">
-<div class="qut">“</div>
-<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. Sed trist ique justo nec mauris efficitur, ut lacinia elit dapibus. In egestas elit in dap ibus laoreet. Duis magna libero, fermentum ut facilisis id, pulvinar eget tortor. Vestibulum pelle ntesque tincidunt lorem, vitae euismod felis porttitor sed. </p>
-<h3>Robert G. Smith</h3>
-<h4>Manager, Company</h4>
-</div></div></div></div><div class="owl-nav disabled"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
-</div>
-</div>
-</div>
-</section-->
-
-
-
-<!--section class="extra-section spad pb-0">
-<div class="container-fluid">
- <div class="row">
-<div class="col-xl-8 offset-xl-2">
-<div class="section-title">
-<h2>Extra Skills</h2>
-</div>
-<div class="row">
-<div class="col-lg-3 col-md-6 pt-5">
-<div class="fact-box trans">
-<div class="fact-content">
-<div class="circle-progress">
-<div id="progress1" class="prog-circle"><canvas width="218" height="218" style="height: 175px; width: 175px;"></canvas></div>
-<div class="progress-info">
-<h2>75%</h2>
-</div>
-<div class="prog-title">
-<h3>Inspiration</h3>
-<p>Etiam nec odio vestibulum est.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6 pt-5">
-<div class="fact-box trans">
-<div class="fact-content">
-<div class="circle-progress">
-<div id="progress2" class="prog-circle"><canvas width="218" height="218" style="height: 175px; width: 175px;"></canvas></div>
-<div class="progress-info">
-<h2>83%</h2>
-</div>
-<div class="prog-title">
-<h3>Inspiration</h3>
-<p>Etiam nec odio vestibulum est.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="fact-box">
-<div class="fact-content">
-<img src="./Civic - CV Resume_files/1-w.png" alt="">
-<h2>14</h2>
-<p>Years of Experience</p>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="fact-box">
-<div class="fact-content">
-<img src="./Civic - CV Resume_files/2-w.png" alt="">
-<h2>9</h2>
-<p>Awards Won</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section-->
-
-
-
-<footer class="footer-section">
-<div class="container text-center">
-<div class="copyright">
-Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved
-</div>
-</div>
-</footer>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-
-</body></html>
+</html>
