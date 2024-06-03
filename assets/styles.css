@@ -633,6 +633,13 @@ ol {
 	top: 0;
 }
 
+
+
+
+.logos-warp {
+	padding: 0 100px;
+}
+
 /*---------------------
 	Contact section
 -----------------------*/
@@ -1448,4 +1455,18 @@ a.set-bg.port-pic:hover {
 }
 .portfolio-item a:after {
     display: none;
+}
+
+
+
+.col-xl-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.col-xl-2 img {
+    max-height: 100px;
+    max-width: 150px;
 }
