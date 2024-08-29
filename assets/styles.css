@@ -67,7 +67,7 @@ ol {
 	Helper CSS
 -----------------------*/
 .spad {
-	padding-top: 125px;
+	padding-top: 75px;
 	padding-bottom: 110px;
 }
 
@@ -405,7 +405,7 @@ ol {
 }
 
 .hero-text p {
-	font-size: 33px;
+	font-size: 25px;
 	line-height: 1.3;
 }
 
