@@ -224,7 +224,7 @@ input[type="submit"]:focus {
 }
 .preloader,
 .preloader-portfolio {
-  position: fixed;
+  position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
