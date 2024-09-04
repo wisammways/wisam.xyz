@@ -2946,3 +2946,16 @@ blockquote {
     display: none;
   }
 }
+
+
+
+.clients.owl-carousel .owl-nav *:before {
+  content: '' !important;
+  display: none !important;
+}
+.owl-nav svg {
+width: 24px;
+height: 12px;
+margin-top: 3px;
+margin-bottom: -2px;
+}
