@@ -65,7 +65,7 @@
     // /Custom scroll
 
     // Contact form validator
-    /*$(function () {
+    $(function () {
 
         $('#contact_form').validator();
 
@@ -92,11 +92,11 @@
                 return false;
             }
         });
-    });*/
+    });
     // /Contact form validator
 
     //On Window load & Resize
-    /*$(window)
+    $(window)
         .on('load', function() { //Load
             // Animation on Page Loading
             $(".preloader").fadeOut( 800, "linear" );
@@ -115,7 +115,7 @@
                 $(this).perfectScrollbar('update');
             });
             customScroll();
-        });*/
+        });
 
 
     // On Document Load
@@ -237,7 +237,7 @@
 
 
         //Form Controls
-        /*$('.form-control')
+        $('.form-control')
             .val('')
             .on("focusin", function(){
                 $(this).parent('.form-group').addClass('form-group-focus');
@@ -246,7 +246,7 @@
                 if($(this).val().length === 0) {
                     $(this).parent('.form-group').removeClass('form-group-focus');
                 }
-            });*/
+            });
 
         // Lightbox init
         $('body').magnificPopup({
@@ -305,12 +305,12 @@
         });
 
         //Google Maps
-        /*if ($(".lmpixels-map")[0]){
+        if ($(".lmpixels-map")[0]){
             var address = 'San Francisco, S601 Townsend Street, California, USA', //Replace with Your Address
                 address = encodeURIComponent(address),
                 src = 'https://maps.google.com/maps?q=' + address + '&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near&output=embed';
             $(".lmpixels-map iframe").attr("src", src);
-        }*/
+        }
     });
 
 })(jQuery);
