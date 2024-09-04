@@ -65,7 +65,7 @@
     // /Custom scroll
 
     // Contact form validator
-    $(function () {
+    /*$(function () {
 
         $('#contact_form').validator();
 
@@ -92,7 +92,7 @@
                 return false;
             }
         });
-    });
+    });*/
     // /Contact form validator
 
     //On Window load & Resize
@@ -237,7 +237,7 @@
 
 
         //Form Controls
-        $('.form-control')
+        /*$('.form-control')
             .val('')
             .on("focusin", function(){
                 $(this).parent('.form-group').addClass('form-group-focus');
@@ -246,7 +246,7 @@
                 if($(this).val().length === 0) {
                     $(this).parent('.form-group').removeClass('form-group-focus');
                 }
-            });
+            });*/
 
         // Lightbox init
         $('body').magnificPopup({
