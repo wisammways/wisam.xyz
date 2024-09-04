@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="shortcut icon" href="favicon.ico">
+
 	<title>Wisam Mways | WordPress Development and Maintenance - Lebanon</title>
 
 	<meta name="description"
@@ -18,34 +21,19 @@
 		content="With a strong focus on open-source technologies like WordPress, Drupal, and Laravel, I excel in developing both informative and e-commerce websites. Beirut, Lebanon">
 	<meta property="og:url" content="https://wisam.xyz/">
 	<meta property="og:site_name" content="Wisam Mways">
-	<meta property="og:image" content="https://wisam.xyz/images/wisam-mways-photo.jpg">
+	<meta property="og:image" content="https://wisam.xyz/img/wisam-mways.jpg">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:label" content="Wisam Mways">
-	<meta name="twitter:image" content="https://wisam.xyz/images/wisam-mways-photo.jpg">
+	<meta name="twitter:image" content="https://wisam.xyz/img/wisam-mways.jpg">
 
 	<meta name="google-site-verification" content="bT8UWnKzDQvHxH64QFXZu1levIzncLjkqEiPoygXbP4" />
 
 	<meta http-equiv="x-dns-prefetch-control" content="on">
 
-	<link href="" rel="shortcut icon">
-
 	<link rel="preconnect" href="https://fonts.googleapis.com/">
 	<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
 	<link rel="preconnect" href="https://cdnjs.cloudflare.com/">
 	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
-
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-	<link rel="stylesheet" href="./assets/styles.css">
-
-	<link rel="icon" href="images/favicon.ico" sizes="32x32" />
-
-	<!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-20WG38JL6L"></script>
@@ -57,335 +45,902 @@
 		gtag('config', 'G-20WG38JL6L');
 	</script>
 
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+  <link rel="stylesheet" href="css/animations.css" type="text/css">
+  <link rel="stylesheet" href="css/perfect-scrollbar.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 
 <body>
+  <!-- Animated Background -->
+  <div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
+  <!-- /Animated Background -->
+
+  <!-- Loading animation -->
+  <div class="preloader">
+    <div class="preloader-animation">
+      <div class="preloader-spinner">
+      </div>
+    </div>
+  </div>
+  <!-- /Loading animation -->
+
+  <div class="page">
+    <div class="page-content">
+
+      <header id="site_header" class="header mobile-menu-hide">
+        <div class="header-content hide-on-mobile">
+          <div class="header-photo">
+            <img src="img/wisam-mways.jpg" alt="Wisam Mways">
+          </div>
+          <div class="header-titles">
+            <h2>Wisam Mways</h2>
+            <h4>Senior Web Developer</h4>
+          </div>
+        </div>
+
+        <ul class="main-menu">
+          <li class="active">
+            <a href="#home" class="nav-anim">
+              <span class="menu-icon lnr lnr-home"></span>
+              <span class="link-text">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#resume" class="nav-anim">
+              <span class="menu-icon lnr lnr-graduation-hat"></span>
+              <span class="link-text">Resume</span>
+            </a>
+          </li>
+          <!--li>
+            <a href="#portfolio" class="nav-anim">
+              <span class="menu-icon lnr lnr-briefcase"></span>
+              <span class="link-text">Portfolio</span>
+            </a>
+          </li-->
+          <li>
+            <a href="#contact" class="nav-anim">
+              <span class="menu-icon lnr lnr-envelope"></span>
+              <span class="link-text">Contact</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="social-links">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/wisamx/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li><a href="https://github.com/wisammways" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/wisam.mways/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li><a href="https://api.whatsapp.com/send/?phone=0096170712315&text&app_absent=0" target="_blank"><i
+                  class="fab fa-whatsapp"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="header-buttons">
+          <a href="#contact" class="btn btn-primary nav-anim">Contact me</a>
+        </div>
+
+        <div class="copyrights">© 2024 All rights reserved.</div>
+      </header>
+
+      <!-- Mobile Navigation -->
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- End Mobile Navigation -->
+
+      <!-- Arrows Nav -->
+      <div class="lmpixels-arrows-nav">
+        <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+        <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+      </div>
+      <!-- End Arrows Nav -->
+
+      <div class="content-area">
+        <div class="animated-sections">
+
+          <!-- Home Subpage -->
+          <section data-id="home" class="animated-section start-page">
+            <div class="section-content">
+
+              <header class="homepage-header show-on_mobile" style="background-color: #04b4e0;">
+                <div class="header-content">
+                  <div class="header-photo">
+                    <img src="img/wisam-mways.jpg" alt="Wisam Mways">
+                  </div>
+                  <div class="header-titles">
+                    <h2>Wisam Mways</h2>
+                    <h4>Senior Web Developer</h4>
+                  </div>
+                </div>
+
+                <div class="social-links">
+                  <ul>
+                    <li><a href="https://www.linkedin.com/in/wisamx/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li><a href="https://github.com/wisammways" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/wisam.mways/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=0096170712315&text&app_absent=0" target="_blank"><i
+                          class="fab fa-whatsapp"></i></a></li>
+                  </ul>
+                </div>
+      
 
 
-	<section class="hero-section spad">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xl-10 offset-xl-1">
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="hero-text">
-								<h1>Wisam Mways</h1>
-								<p>With a strong focus on open-source technologies like WordPress, Drupal, and Laravel, I excel in developing both informative and e-commerce websites.<br/> Leveraging my full-stack capabilities, I am adept at maintaining software, optimizing web page loading speeds, resolving technical issues, and ensuring the delivery of high-quality and dependable code.</p>
-							</div>
-							<div class="hero-info">
-								<h2>General Info</h2>
-								<ul>
-									<li><span>Date of Birth</span>Mar 21, 1988</li>
-									<li><span>Address</span>Beirut, Lebanon</li>
-									<li><span>Phone </span><a href="tel:+96170712315">+961 70 712 315</a></li>
-									<li><span>E-mail</span><a href="mailto:wisamx@outlook.com">wisamx@outlook.com</a>
-									</li>
-									
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<figure class="hero-image">
-								<img src="./images/wisam-mways-photo-new.jpg" alt="Wisam Mways Photo">
-							</figure>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+              </header>
 
 
-	<section class="portfolio-section spad pb-5">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xl-4 col-md-8 offset-xl-2 ">
-					<div class="section-title">
-						<h2>Recent Projetcs</h2>
-					</div>
-				</div>
-				<!--div class="col-md-4 text-md-right">
-					<a href="portfolio.html" class="site-btn mb-5">See All Portfolio</a>
-				</div-->
-			</div>
-			<div class="portfolio-warp">
-				<div class="row">
-					<div class="col-xl-3 col-lg-6 col-md-6">
-						<div class="portfolio-item">
-							<a href="https://www.katstores.com/" target="_blacnk" rel=”nofollow” class="set-bg port-pic"
-								style="background-image: url('./images/portofolio/katstores.jpg');"></a>
-							<h2>KatStores</h2>
-							<p>eCommerce Website<br/>Drupal 8<br/>Custom Theme</p>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-6 col-md-6">
-						<div class="portfolio-item">
-							<a href="https://perspectives-lb.com/" target="_blacnk" rel=”nofollow” class="set-bg port-pic"
-								style="background-image: url('./images/portofolio/perspectives-lb.jpg');"></a>
-							<h2>Perspectives LB</h2>
-							<p>eCommerce Website<br/>WordPress<br/>Ready Template</p>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-6 col-md-6">
-						<div class="portfolio-item">
-							<a href="https://merrycare.net.au/" target="_blacnk" rel=”nofollow” class="set-bg port-pic"
-								style="background-image: url('./images/portofolio/merrycare.jpg');"></a>
-							<h2>MerryCare</h2>
-							<p>Company Profile
-								
-								<br/>WordPress<br/>Ready Template</p>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-6 col-md-6">
-						<div class="portfolio-item">
-							<a href="https://mmclebanon.com/" target="_blacnk" rel=”nofollow” class="set-bg port-pic"
-								style="background-image: url('./images/portofolio/mmc.jpg');"></a>
-							<h2>MMC Lebanon</h2>
-							<p>Company Profile<br/>WordPress<br/>Ready Template</p>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
 
 
-	<section class="portfolio-section spad pb-5">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xl-4 col-md-8 offset-xl-2 ">
-					<div class="section-title">
-						<h2>Clients</h2>
-					</div>
-				</div>
-			</div>
-			<div class="portfolio-warp">
-				<div class="row">
-					<div class="col-xl-2 col-lg-6 col-md-6">
-						<img src="./images/clients/KATSTORES.png" />
-					</div>
-					<div class="col-xl-2 col-lg-6 col-md-6">
-						<img src="./images/clients/merrycare.png" />
-					</div>
-					<div class="col-xl-2 col-lg-6 col-md-6">
-						<img src="./images/clients/mmc.png" />
-					</div>
-					<div class="col-xl-2 col-lg-6 col-md-6">
-						<img src="./images/clients/MMJ_Logo-min.png" />
-					</div>
-					<div class="col-xl-2 col-lg-6 col-md-6">
-						<img src="./images/clients/logo-3.webp" />
-					</div>
-					<div class="col-xl-2 col-lg-6 col-md-6">
-						<img src="./images/clients/logo.png" />
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xl-2 col-lg-6 col-md-6">
-						<img src="./images/clients/logox_2.png" />
-					</div>
-					<div class="col-xl-2 col-lg-6 col-md-6">
-						<img src="./images/clients/unimart.png" />
-					</div>
-					<div class="col-xl-2 col-lg-6 col-md-6">
-						<img src="./images/clients/tlr.webp" />
-					</div>
-					<div class="col-xl-2 col-lg-6 col-md-6">
-						<img src="./images/clients/nextech.png" />
-					</div>
-					<div class="col-xl-2 col-lg-6 col-md-6">
-						<img src="./images/clients/clay.png" />
-					</div>
-					<div class="col-xl-2 col-lg-6 col-md-6">
-						<img src="./images/clients/fadi new logo.png" />
-					</div>
-				</div>
 
-			</div>
-		</div>
-	</section>
+              <div class="page-title">
+                <h2>Who <span>I am</span></h2>
+              </div>
 
+              <!-- Personal Information -->
+              <div class="row">
+                <div class="col-xs-12 col-sm-7">
+                  <p>With a strong focus on open-source technologies like WordPress, Drupal, and Laravel, I excel in
+                    developing both informative and e-commerce websites.</p>
+                  <p>Leveraging my full-stack capabilities, I am adept at maintaining software, optimizing web page
+                    loading speeds, resolving technical issues, and ensuring the delivery of high-quality and dependable
+                    code.</p>
+                </div>
 
-	<div class="social-section mt-5">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xl-10 offset-xl-1">
-					<div class="social-link-warp">
-						<div class="social-links">
-							<a href="https://www.linkedin.com/in/wisamx/" target="_blank" rel=”nofollow”><i
-									class="fab fa-linkedin"></i></a>
-							<a href="https://github.com/wisammways" target="_blank" rel=”nofollow”><i
-									class="fab fa-github"></i></a>
-							<a href="https://www.instagram.com/wisam.mways/" target="_blank" rel=”nofollow”><i
-									class="fab fa-instagram"></i></a>
-							<a href="https://api.whatsapp.com/send/?phone=0096170712315&text&app_absent=0"
-								target="_blank" rel=”nofollow”><i class="fab fa-whatsapp"></i></a>
-						</div>
-						<h2 class="hidden-md hidden-sm">My Social Profiles</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                <div class="col-xs-12 col-sm-5">
+                  <div class="info-list">
+                    <ul>
+                      <li>
+                        <span class="title">Date of Birth</span>
+                        <span class="value">Mar 21, 1988</span>
+                      </li>
 
-	
-	<section class="resume-section with-bg spad mb-5">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xl-8 offset-xl-2">
-					<div class="section-title">
-						<h2>Get in touch</h2>
-					</div>
-					<div class="row">
-						<div class="col-lg-12">
-							<p>Please feel free to reach out to me. I'm always open to discussing new projects, creative ideas, or opportunities to collaborate on your vision.							</p>
-						</div>
+                      <li>
+                        <span class="title">Residence</span>
+                        <span class="value">Beirut, Lebanon</span>
+                      </li>
 
-							<div class="col-sm-4">
-								<div class="fact-box trans">
-									<div class="fact-content">
-										<div class="circle-progress">
-											<div id="progress1" class="prog-circle"><canvas width="218" height="218"
-													style="height: 175px; width: 175px;"></canvas></div>
-											<div class="progress-info">
-												<h2><i class="fa fa-phone"></i></h2>
-											</div>
-											<div class="prog-title">
-												<h3>Call Me</h3>
-												<p><a href="tel:0096170712315">00961 707 123 15</a></p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="fact-box trans">
-									<div class="fact-content">
-										<div class="circle-progress">
-											<div id="progress2" class="prog-circle"><canvas width="218" height="218"
-													style="height: 175px; width: 175px;"></canvas></div>
-											<div class="progress-info">
-												<h2><i class="fab fa-whatsapp"></i></h2>
-											</div>
-											<div class="prog-title">
-												<h3>Whatsapp</h3>
-												<p><a target="_blank" href="https://wa.me/+0096170712315">00961 707 123 15</a></p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="fact-box trans">
-									<div class="fact-content">
-										<div class="circle-progress">
-											<div id="progress2" class="prog-circle"><canvas width="218" height="218"
-													style="height: 175px; width: 175px;"></canvas></div>
-											<div class="progress-info">
-												<h2><i class="fa fa-envelope"></i></h2>
-											</div>
-											<div class="prog-title">
-												<h3>Write Email</h3>
-												<p><a href="mailto:wisamx@outlook.com">wisamx<span>@</span>outlook.com</a></p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+                      <li>
+                        <span class="title">e-mail</span>
+                        <span class="value"><a href="mailto:wisamx@outlook.com">wisamx@outlook.com</a></span>
+                      </li>
 
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                      <li>
+                        <span class="title">Phone</span>
+                        <span class="value"><a href="tel:+96170712315">+961 707 123 15</a></span>
+                      </li>
+                    </ul>
+                  </div>
 
-	
-	<section class="resume-section">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xl-7 offset-xl-2">
-					<div class="section-title">
-						<h2>Work Experience</h2>
-					</div>
-					<ul class="resume-list">
-						<li>
-							<h2>2020-Present</h2>
-							<h3>MindField Digital<small style="font-size: 20px;">, Dubai (Remootly)</small></h3>
-							<h4>Senior Web Developer</h4>
-							<p style="text-align: justify;">As a Web Developer at Mindfield, I design and develop WordPress websites, creating custom themes for various stores and companies. Additionally, I manage maintenance tasks, addressing issues like hack fixes, optimizing performance, and conducting security checks to ensure websites operate seamlessly. My role is all about merging creativity with technical expertise to provide effective digital solutions for our clients' online success.</p>
-						</li>
-						<li>
-							<h2>2018-2020</h2>
-							<h3>Institut Avrio de Geneve<small style="font-size: 20px;">, Switzerland (Remootly)</small></h3>
-							<h4>Web Developer, IT</h4>
-							<p style="text-align: justify;">I was responsible for the development of the institute's international website and its Arabic version, both utilizing WordPress to ensure a user-friendly experience. In addition to web development, I also took on the role of designing the institute's logos. Furthermore, I provided remote management for the institute's NAS (Network Attached Storage) device, ensuring efficient data storage and access.
-<br/>
-								Beyond this, I spearheaded the creation of an online data management and accounting solution, streamlining the institute's processes and enhancing data security. My multifaceted role encompassed both technical expertise and creative design, contributing to the institute's digital presence and operational efficiency.</p>
-						</li>
-						<li>
-							<h2>2013-2018</h2>
-							<h3>AlBa'eth University<small style="font-size: 20px;">, Syria</small></h3>
-							<h4>Teaching Assistance</h4>
-							<p style="text-align: justify;">I instructed practical components of courses such as C++ Programming, Algorithms and Data Structures, Operating Systems, Computer Networks, Parallel Computing, and Robotics. Additionally, I provided guidance and supervision to students within the university's laboratories, offering valuable support for their graduation projects. My role involved fostering a hands-on learning environment and mentoring students to excel in their academic endeavors.</p>
-						</li>
-						<li>
-							<h2>2007-2018</h2>
-							<h3>Freelance<small style="font-size: 20px;">, Syria</small></h3>
-							<h4>Web Developer</h4>
-							<p style="text-align: justify;">During my freelance career, I specialized in developing dynamic websites utilizing a range of technologies, including Drupal and WordPress as content management systems, along with PHP, HTML5, and CSS3 for custom solutions. I excelled in translating clients' visions into fully functional and aesthetically pleasing websites, emphasizing user experience and responsive design.
+                  
+                                    <!--ul class="knowledges">
+                                      <li>WordPress</li>
+                                      <li>Drupal</li>
+                                      <li>Laravel</li>
+                                      <li>Shopify</li>
+                                      <li>WebFlow</li>
+                                      <li>Headless CMS</li>
+                                    </ul-->
+                </div>
+              </div>
+              <!-- End of Personal Information -->
 
-								My freelance journey allowed me to collaborate with a diverse array of clients, each with unique requirements and goals. Whether it was creating bespoke themes, implementing e-commerce solutions, or optimizing website performance, I was dedicated to delivering high-quality, tailor-made web solutions. My proficiency in these technologies enabled me to provide clients with powerful and effective digital platforms that not only met but often exceeded their expectations.</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
+              <div class="white-space-50"></div>
 
+              <!-- Services -->
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <div class="block-title">
+                    <h3>What <span>I Do</span></h3>
+                  </div>
+                </div>
+              </div>
 
-	<section class="resume-section with-bg spad">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xl-7 offset-xl-2">
-					<div class="section-title">
-						<h2>Education</h2>
-					</div>
-					<ul class="resume-list">
-						<li>
-							<h2>2018</h2>
-							<h3>Master's degree in Computer Engineering</h3>
-							<h4>Tishreen University, SYRIA</h4>
-							<p>During my pursuit of a Master's degree in Computer Engineering, I focused on using Semantic Web technologies to improve data publication in academia, particularly in the context of educational data. I employed tools like Protege and the Web Ontology Language (OWL) to create structured knowledge systems that enhance data organization and accessibility. This research contributed to the broader academic community's understanding of how technology can revolutionize educational data publication and access, highlighting its transformative potential in education.</p>
-						</li>
-						<li>
-							<h2>2006 - 2011</h2>
-							<h3>Bachelor's degree in Computer and Automated Control Engineering</h3>
-							<h4>Tishreen University, SYRIA</h4>
-							<p style="text-align: justify;">During my undergraduate studies, I delved into a comprehensive curriculum that encompassed programming, database design and normalization, compiler systems, operating systems, information system analysis, software engineering, image processing, networking, computer architecture, information security, and parallel computing. For my graduation project, I constructed a university website using ASP.NET Web Forms and SQL Server, demonstrating the practical application of my acquired skills and knowledge.
-							</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="col-inner">
+                    <div class="info-list-w-icon">
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="lnr lnr-code"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h4>Website Development</h4>
+                          <p>I develop websites using the latest technologies and open-source platforms like WordPress,
+                            Drupal, and Laravel. Whether starting from a paid template or building from scratch based on
+                            custom UI/UX design, I ensure seamless functionality, elegant aesthetics, and a
+                            user-friendly experience.</p>
+                        </div>
+                      </div>
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="lnr lnr-cog"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h4>Website Maintenance</h4>
+                          <p>Keep your WordPress website running smoothly with our comprehensive maintenance services.
+                            We'll handle updates, security scans, performance optimization, code cleanup, and database
+                            maintenance to ensure your site remains secure, fast, and up-to-date.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                  <div class="col-inner">
+                    <div class="info-list-w-icon">
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="lnr lnr-rocket"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h4>Website Optimization</h4>
+                          <p>Boost your website's performance with our expert optimization services. We'll analyze your
+                            site using tools like Google PageSpeed Insights, optimize images, minify CSS and JavaScript,
+                            and implement caching techniques to ensure lightning-fast load times and improve user
+                            experience.</p>
+                        </div>
+                      </div>
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="lnr lnr-select"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h4>GTM Implementation</h4>
+                          <p>Maximize your website analytics with our expert GTM implementation. We'll set up Google Tag
+                            Manager to efficiently track user behavior, conversions, and campaign performance, providing
+                            you with valuable insights to optimize your marketing efforts.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Services -->
+
+              <div class="white-space-30"></div>
+
+              <!-- Testimonials
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="block-title">
+                        <h3>Testimonials</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="testimonials owl-carousel">
+                        
+                        <div class="testimonial">
+                          <div class="img">
+                            <img src="img/testimonials/testimonial-1.jpg" alt="Alex Smith">
+                          </div>
+                          <div class="text">
+                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
+                          </div>
+
+                          <div class="author-info">
+                            <h4 class="author">Julia Hickman</h4>
+                            <h5 class="company">Omni Source</h5>
+                            <div class="icon">
+                              <i class="fas fa-quote-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        
+
+                        
+                        <div class="testimonial">
+                          <div class="img">
+                            <img src="img/testimonials/testimonial-2.jpg" alt="Alex Smith">
+                          </div>
+                          <div class="text">
+                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
+                          </div>
+
+                          <div class="author-info">
+                            <h4 class="author">Robert Watkins</h4>
+                            <h5 class="company">Endicott Shoes</h5>
+                            <div class="icon">
+                              <i class="fas fa-quote-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        
+
+                        
+                        <div class="testimonial">
+                          <div class="img">
+                            <img src="img/testimonials/testimonial-3.jpg" alt="Alex Smith">
+                          </div>
+                          <div class="text">
+                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
+                          </div>
+
+                          <div class="author-info">
+                            <h4 class="author">Kristin Carroll</h4>
+                            <h5 class="company">Helping Hand</h5>
+                            <div class="icon">
+                              <i class="fas fa-quote-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  End of Testimonials -->
 
 
-	<footer class="footer-section">
-		<div class="container text-center">
-			<div class="copyright">
-				Copyright ©
-				<script>document.write(new Date().getFullYear());</script> All rights reserved
-			</div>
-		</div>
-	</footer>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <div class="block-title">
+                    <h3>My <span>Work</span></h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <!-- Portfolio Content -->
+                  <div class="portfolio-content">
+
+                    <!--ul class="portfolio-filters">
+                      <li class="active">
+                        <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_detailed">Detailed</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_mockups">Mockups</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">SoundCloud</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_vimeo-videos">Vimeo Videos</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">YouTube Videos</a>
+                      </li>
+                    </ul-->
+
+                    <!-- Portfolio Grid -->
+                    <div class="portfolio-grid three-columns">
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_wordPress"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/portfolio/1.jpg" alt="MMC Lebanon" title="" />
+                          <a class="lightbox" title="MMC Lebanon" href="img/portfolio/full/1.jpg"></a>
+                        </div>
+                        <h4 class="name">MMC Lebanon</h4>
+                        <span class="category">WordPress</span>
+                      </figure>
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_wordPress"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/portfolio/2.jpg" alt="MerryCare" title="" />
+                          <a class="lightbox" title="MerryCare" href="img/portfolio/full/2.jpg"></a>
+                        </div>
+                        <h4 class="name">MerryCare</h4>
+                        <span class="category">WordPress</span>
+                      </figure>
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_wordPress"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/portfolio/3.jpg" alt="Perespectives LB" title="" />
+                          <a class="lightbox" title="Perespectives LB" href="img/portfolio/full/3.jpg"></a>
+                        </div>
+                        <h4 class="name">Perespectives LB</h4>
+                        <span class="category">WordPress</span>
+                      </figure>
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_wordPress"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/portfolio/4.jpg" alt="KatStores" title="" />
+                          <a class="lightbox" title="KatStores" href="img/portfolio/full/4.jpg"></a>
+                        </div>
+                        <h4 class="name">KatStores</h4>
+                        <span class="category">Drupal</span>
+                      </figure>
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_drupal"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/portfolio/5.jpg" alt="3D Line Norway" title="" />
+                          <a class="lightbox" title="3D Line Norway" href="img/portfolio/full/5.jpg"></a>
+                        </div>
+                        <h4 class="name">3D Line Norway</h4>
+                        <span class="category">WordPress</span>
+                      </figure>
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_wordPress"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/portfolio/6.jpg" alt="FAA Designs" title="" />
+                          <a class="lightbox" title="FAA Designs" href="img/portfolio/full/6.jpg"></a>
+                        </div>
+                        <h4 class="name">FAA Designs</h4>
+                        <span class="category">WordPress</span>
+                      </figure>
 
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+                    </div>
+                  </div>
+                  <!-- End of Portfolio Content -->
+                </div>
+              </div>
 
+              <div class="white-space-50"></div>
+
+              <!-- Clients -->
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <div class="block-title">
+                    <h3>Cilents</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <div class="clients owl-carousel">
+
+                    <div class="client-block">
+                        <img src="img/clients/client-1.png" alt="Logo">
+                    </div>
+
+                    <div class="client-block">
+                        <img src="img/clients/client-2.png" alt="Logo">
+                    </div>
+
+                    <div class="client-block">
+                        <img src="img/clients/client-3.png" alt="Logo">
+                    </div>
+
+                    <div class="client-block">
+                        <img src="img/clients/client-4.png" alt="Logo">
+                    </div>
+
+                    <div class="client-block">
+                        <img src="img/clients/client-5.png" alt="Logo">
+                    </div>
+
+                    <div class="client-block">
+                        <img src="img/clients/client-6.png" alt="Logo">
+                    </div>
+
+                    <div class="client-block">
+                        <img src="img/clients/client-7.png" alt="Logo">
+                    </div>
+
+                    <div class="client-block">
+                        <img src="img/clients/client-8.png" alt="Logo">
+                    </div>
+
+                    <div class="client-block">
+                        <img src="img/clients/client-9.png" alt="Logo">
+                    </div>
+
+                    <div class="client-block">
+                        <img src="img/clients/client-10.png" alt="Logo">
+                    </div>
+
+                    <div class="client-block">
+                        <img src="img/clients/client-11.png" alt="Logo">
+                    </div>
+
+                    <div class="client-block">
+                     
+                        <img src="img/clients/client-12.png" alt="Logo">
+                    
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- End of Clients -->
+
+              <!--
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+
+                      <div class="block-title">
+                        <h3>Pricing</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class=" col-xs-12 col-sm-12 ">
+                      <div class="fw-pricing clearfix row">
+                        
+                        <div class="fw-package-wrap col-md-6 ">
+                          <div class="fw-package">
+                            <div class="fw-heading-row">
+                              <span>Silver</span>
+                            </div>
+                            
+                            <div class="fw-pricing-row">
+                              <span>$64</span>
+                              <small>per month</small>
+                            </div>
+                            
+                            <div class="fw-button-row">
+                              <a href="#" target="_self" class="btn btn-secondary">Free Trial</a>
+                            </div>
+
+                            <div class="fw-default-row">Lorem ipsum dolor</div>
+                            <div class="fw-default-row">Pellentesque scelerisque</div>
+                            <div class="fw-default-row">Morbi eu sagittis</div>
+                          </div>
+                        </div>
+     
+                        <div class="fw-package-wrap col-md-6 highlight-col ">
+                          <div class="fw-package">
+                            <div class="fw-heading-row">
+                              <span>Gold</span>
+                            </div>
+                            
+                            <div class="fw-pricing-row">
+                              <span>$128</span>
+                              <small>per month</small>
+                            </div>
+
+                            <div class="fw-button-row">
+                              <a href="#" target="_self" class="btn btn-primary">Free Trial</a>
+                            </div>
+                            
+                            <div class="fw-default-row">Lorem ipsum dolor</div>
+                            <div class="fw-default-row">Pellentesque scelerisque</div>
+                            <div class="fw-default-row">Morbi eu sagittis</div>
+                            <div class="fw-default-row">Donec non diam</div>
+                            <div class="fw-default-row"></div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  End of Pricing -->
+
+            </div>
+          </section>
+          <!-- End of Home Subpage -->
+
+          <!-- Resume Subpage -->
+          <section data-id="resume" class="animated-section">
+            <div class="section-content">
+              <div class="page-title">
+                <h2>Resume</h2>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+
+                  <div class="block-title">
+                    <h3>Education</h3>
+                  </div>
+
+                  <div class="timeline timeline-second-style clearfix">
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2018</h5>
+                        <span class="item-company">Tishreen University<br/> <small>Syria</small></span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">Master's degree in Computer Engineering</h4>
+                        <p>During my pursuit of a Master's degree in Computer Engineering, I focused on using Semantic Web technologies to improve data publication in academia, particularly in the context of educational data. I employed tools like Protege and the Web Ontology Language (OWL) to create structured knowledge systems that enhance data organization and accessibility. This research contributed to the broader academic community's understanding of how technology can revolutionize educational data publication and access, highlighting its transformative potential in education.</p>
+                      </div>
+                    </div>
+
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2006 - 2011</h5>
+                        <span class="item-company">Tishreen University<br/> <small>Syria</small></span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">Bachelor's degree in Computer and Automated Control Engineering
+                        </h4>
+                        <p>During my undergraduate studies, I delved into a comprehensive curriculum that encompassed programming, database design and normalization, compiler systems, operating systems, information system analysis, software engineering, image processing, networking, computer architecture, information security, and parallel computing. For my graduation project, I constructed a university website using ASP.NET Web Forms and SQL Server, demonstrating the practical application of my acquired skills and knowledge.
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="white-space-50"></div>
+
+                  <div class="block-title">
+                    <h3>Experience</h3>
+                  </div>
+
+                  <div class="timeline timeline-second-style clearfix">
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2020 - Current</h5>
+                        <span class="item-company">MindField Digital<br/> <small>Dubai (Remootly)</small>
+                        </span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">Senior Web Developer
+                        </h4>
+                        <p>As a Web Developer at Mindfield, I design and develop WordPress websites, creating custom themes for various stores and companies. Additionally, I manage maintenance tasks, addressing issues like hack fixes, optimizing performance, and conducting security checks to ensure websites operate seamlessly. My role is all about merging creativity with technical expertise to provide effective digital solutions for our clients' online success.
+
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2018 - 2020
+                        </h5>
+                        <span class="item-company">Institut Avrio de Geneve<br/><small>Switzerland (Remootly)</small>
+                        </span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">Web Developer, IT</h4>
+                        <p>I was responsible for the development of the institute's international website and its Arabic version, both utilizing WordPress to ensure a user-friendly experience. In addition to web development, I also took on the role of designing the institute's logos. Furthermore, I provided remote management for the institute's NAS (Network Attached Storage) device, ensuring efficient data storage and access.
+                          Beyond this, I spearheaded the creation of an online data management and accounting solution, streamlining the institute's processes and enhancing data security. My multifaceted role encompassed both technical expertise and creative design, contributing to the institute's digital presence and operational efficiency.</p>
+                      </div>
+                    </div>
+
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2013 - 2018
+                        </h5>
+                        <span class="item-company">AlBa'eth University<br/><small>Syria</small>
+                        </span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">Teaching Assistance
+                        </h4>
+                        <p>I instructed practical components of courses such as C++ Programming, Algorithms and Data Structures, Operating Systems, Computer Networks, Parallel Computing, and Robotics. Additionally, I provided guidance and supervision to students within the university's laboratories, offering valuable support for their graduation projects. My role involved fostering a hands-on learning environment and mentoring students to excel in their academic endeavors.
+
+                        </p>
+                      </div>
+                    </div>
+
+
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2007 - 2018
+
+                        </h5>
+                        <span class="item-company">Freelance<br/><small>Syria</small>
+                        </span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">Web Developer
+
+                        </h4>
+                        <p>During my freelance career, I specialized in developing dynamic websites utilizing a range of technologies, including Drupal and WordPress as content management systems, along with PHP, HTML5, and CSS3 for custom solutions. I excelled in translating clients' visions into fully functional and aesthetically pleasing websites, emphasizing user experience and responsive design. My freelance journey allowed me to collaborate with a diverse array of clients, each with unique requirements and goals. Whether it was creating bespoke themes, implementing e-commerce solutions, or optimizing website performance, I was dedicated to delivering high-quality, tailor-made web solutions. My proficiency in these technologies enabled me to provide clients with powerful and effective digital platforms that not only met but often exceeded their expectations.
+
+
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                  
+                </div>
+
+
+              </div>
+
+            </div>
+          </section>
+          <!-- End of Resume Subpage -->
+
+          <!-- Portfolio Subpage -->
+          <section data-id="portfolio" class="animated-section">
+            <div class="section-content">
+              <div class="page-title">
+                <h2>Portfolio</h2>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <!-- Portfolio Content -->
+                  <div class="portfolio-content">
+
+                    <ul class="portfolio-filters">
+                      <li class="active">
+                        <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_detailed">Detailed</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_mockups">Mockups</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">SoundCloud</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_vimeo-videos">Vimeo Videos</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">YouTube Videos</a>
+                      </li>
+                    </ul>
+
+                    <!-- Portfolio Grid -->
+                    <div class="portfolio-grid three-columns">
+
+                      <figure class="item lbaudio" data-groups='["category_all", "category_soundcloud"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/portfolio/1.jpg" alt="SoundCloud Audio" title="" />
+                          <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221650664&#038;color=%23ff5500&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false&#038;show_teaser=true&#038;visual=true"
+                            class="lightbox mfp-iframe" title="SoundCloud Audio"></a>
+                        </div>
+
+                        <i class="fa fa-volume-up"></i>
+                        <h4 class="name">SoundCloud Audio</h4>
+                        <span class="category">SoundCloud</span>
+                      </figure>
+
+                      <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/portfolio/2.jpg" alt="Media Project 2" title="" />
+                          <a href="portfolio-1.html" class="ajax-page-load"></a>
+                        </div>
+
+                        <i class="far fa-file-alt"></i>
+                        <h4 class="name">Detailed Project 2</h4>
+                        <span class="category">Detailed</span>
+                      </figure>
+
+                      <figure class="item lbvideo" data-groups='["category_all", "category_vimeo-videos"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/portfolio/3.jpg" alt="Vimeo Video 1" title="" />
+                          <a href="https://player.vimeo.com/video/158284739" class="lightbox mfp-iframe"
+                            title="Vimeo Video 1"></a>
+                        </div>
+
+                        <i class="fas fa-video"></i>
+                        <h4 class="name">Vimeo Video 1</h4>
+                        <span class="category">Vimeo Videos</span>
+                      </figure>
+
+                      <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/portfolio/4.jpg" alt="Media Project 1" title="" />
+                          <a href="portfolio-1.html" class="ajax-page-load"></a>
+                        </div>
+
+                        <i class="far fa-file-alt"></i>
+                        <h4 class="name">Detailed Project 1</h4>
+                        <span class="category">Detailed</span>
+                      </figure>
+
+                      <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/portfolio/5.jpg" alt="Mockup Design 1" title="" />
+                          <a class="lightbox" title="Mockup Design 1" href="img/portfolio/full/5.jpg"></a>
+                        </div>
+
+                        <i class="far fa-image"></i>
+                        <h4 class="name">Mockup Design 1</h4>
+                        <span class="category">Mockups</span>
+                      </figure>
+
+                      <figure class="item lbvideo" data-groups='["category_all", "category_youtube-videos"]'>
+                        <div class="portfolio-item-img">
+                          <img src="img/portfolio/6.jpg" alt="YouTube Video 1" title="" />
+                          <a href="https://www.youtube.com/embed/bg0gv2YpIok" class="lightbox mfp-iframe"
+                            title="YouTube Video 1"></a>
+                        </div>
+
+                        <i class="fas fa-video"></i>
+                        <h4 class="name">YouTube Video 1</h4>
+                        <span class="category">YouTube Videos</span>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- End of Portfolio Content -->
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Portfolio Subpage -->
+
+          <!-- Contact Subpage -->
+          <section data-id="contact" class="animated-section">
+            <div class="section-content">
+              <div class="page-title">
+                <h2>Contact</h2>
+              </div>
+
+              <div class="row">
+                <!-- Contact Info -->
+                <div class="col-xs-12 col-sm-6">
+                  <div class="lm-info-block gray-default">
+                    <i class="lnr lnr-phone-handset"></i>
+                    <h4><a href="tel:+96170712315">+961 707 123 15</a></h4>
+                    <span class="lm-info-block-value"></span>
+                    <span class="lm-info-block-text"></span>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                  <div class="lm-info-block gray-default">
+                    <i class="lnr lnr-envelope"></i>
+                    <h4><a href="mailto:wisamx@outlook.com">wisamx@outlook.com</a></h4>
+                    <span class="lm-info-block-value"></span>
+                    <span class="lm-info-block-text"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="lm-info-block gray-default">
+                    <i class="lnr lnr-checkmark-circle"></i>
+                    <h4>Freelance Available</h4>
+                    <span class="lm-info-block-value"></span>
+                    <span class="lm-info-block-text"></span>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="lm-info-block gray-default">
+                    <i class="lnr lnr-map-marker"></i>
+                    <h4>Beirut, Lebanon (Remootly)</h4>
+                    <span class="lm-info-block-value"></span>
+                    <span class="lm-info-block-text"></span>
+                  </div>
+                </div>
+                <!-- End of Contact Info -->
+              </div>
+            </div>
+          </section>
+          <!-- End of Contact Subpage -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/animating.js"></script>
+
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  <script src='js/perfect-scrollbar.min.js'></script>
+  <script src='js/jquery.shuffle.min.js'></script>
+  <script src='js/masonry.pkgd.min.js'></script>
+  <script src='js/owl.carousel.min.js'></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+
+  <script src="js/validator.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
