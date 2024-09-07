@@ -22,7 +22,8 @@
 1. Fonts
 ------------------------------------------------------------ */
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
+/*@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 
 /* Linear Icons Font */
 @import url('./fonts/linear-icons-font/style.css');
