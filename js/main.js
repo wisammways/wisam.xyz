@@ -151,6 +151,9 @@
         $('.main-menu').on("click", "a", function (e) {
             mobileMenuHide();
         });
+        $('.header-buttons').on("click", "a", function (e) {
+            mobileMenuHide();
+        });
 
         // Sidebar toggle
         $('.sidebar-toggle').on("click", function () {
