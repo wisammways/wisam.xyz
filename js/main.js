@@ -97,7 +97,7 @@
 
     //On Window load & Resize
     $(window)
-        .on('load', function() { //Load
+        /*.on('load', function() { //Load
             // Animation on Page Loading
             $(".preloader").fadeOut( 800, "linear" );
 
@@ -108,7 +108,7 @@
                     menu: 'ul.main-menu',
                 });
             }
-        })
+        })*/
         .on('resize', function() { //Resize
              mobileMenuHide();
              $('.animated-section').each(function() {
@@ -116,6 +116,7 @@
             });
             customScroll();
         });
+
 
 
     // On Document Load
@@ -167,10 +168,10 @@
         });
 
         // Blog grid init
-        var $container = $(".blog-masonry");
+        /*var $container = $(".blog-masonry");
         $container.imagesLoaded(function(){
             $container.masonry();
-        });
+        });*/
 
         customScroll();
 
@@ -236,6 +237,7 @@
                     items: 5,
                 }
             }
+
         });
 
 
@@ -306,6 +308,18 @@
                 }
             },
         });
+
+            // Animation on Page Loading
+            $(".preloader").fadeOut( 800, "linear" );
+
+            // initializing page transition.
+            var ptPage = $('.animated-sections');
+            if (ptPage[0]) {
+                PageTransitions.init({
+                    menu: 'ul.main-menu',
+                });
+            }
+
 
         //Google Maps
         /*if ($(".lmpixels-map")[0]){
